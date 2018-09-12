@@ -9,6 +9,11 @@
 			height:400px;
 			
 		}
+		.teste {
+			height:450px;
+			width: 450px;
+			border:none;
+		}
 		div{
 			content: "";
 			display: table;
@@ -27,8 +32,7 @@
 			padding:0;
 			overflow: hidden ;
 			background-color: #66bbff ;
-		}
-
+		}	
 		li.diferente {
 			float:left ;		
 		}
@@ -144,33 +148,48 @@
 		<img src="acupula.jpg" alt="acupula" style="width:auto;">
 	</picture>
 	<hr>
+	<script>
+		function funcaoiframe() {
+		document.getElementById("siteacoplado").style.width = "1250px";
+		document.getElementById("siteacoplado").style.height = "300px";
+		document.getElementById("siteacoplado").style.border = "none";
+		}
+	</script>
+	<iframe id="siteacoplado" class="teste" src="acupula.jpg" name="exemploiframe"></iframe><br>
+	<noscript>Sem suporte para JavaScript!</noscript>
+
 	
-	<table style="width=150%">
+	<hr>
+	
+
+	<address id="empresa">
+		Este documento foi escrito por Fernando Lima.<br>
+		saiba mais:<br>
+		<a href="https://www.acupula.com.br" target="_blank" title="Visite a pagina da empresa" id="empresa">www.acupula.com.br</a><br>
+		<a href="https://www.acupula.com.br" target="exemploiframe" onclick="funcaoiframe()">Ou abra o site aqui mesmo</a><br>
+		Rua Lucas Nogueira<br>
+		Atibaia
+	</address>
+	<div>
+		<img src="coala.jpg" alt="coala" class="imag" >
+		<img  src="savana.jpg" alt="savana" class="imag" >
+		<img  src="iglu.jpg" alt="iglu" class="imag">
+	</div>
+	<br>
+	<table style="width=150%;>
 		<caption>Relação de funcionários</caption>
 		<tr>
 			<th>Desenvolvimento</th>
 			<th>Design</th>
-			<th>Conteudo</th>
+			<th>Performance</th>
 			<th>Atendimento</th>
 		</tr>
 		<tr>
 			<td>Dudek</td>
 			<td>Rodrigo</td>
-			<td>?</td>
+			<td>Flávio</td>
 			<td>Marcio</td>
 		</tr>
 	</table>
-	<address id="empresa">
-		Este documento foi escrito por Fernando Lima.<br>
-		saiba mais:<br>
-		<a href="https://www.acupula.com.br" target="_blank" title="Visite a pagina da empresa" id="empresa">www.acupula.com.br</a><br>
-		Rua Lucas Nogueira<br>
-		Atibaia
-	</address>
-	<div>
-	<img src="coala.jpg" alt="coala" class="imag" >
-	<img  src="savana.jpg" alt="savana" class="imag" >
-	<img  src="iglu.jpg" alt="iglu" class="imag">
-	</div>
    </body>
 </html>
