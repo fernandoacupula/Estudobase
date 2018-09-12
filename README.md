@@ -1,2 +1,0 @@
-# Estudobase
-Estudos de estagio

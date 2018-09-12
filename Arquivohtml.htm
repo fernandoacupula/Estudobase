@@ -1,18 +1,28 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
+    <head>
 	<meta charset="UTF-8">
+	<!-- reiniciar o conteudo a cada 30 segundos -->
+	<meta http-equiv="refresh" content="30">
+	<!-- palavras chave para search engines, e browsers -->
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<!-- para indicar ao browser o nivel de scale da pagina, sempre usar, sempre necessario -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- todo documento html pede um title -->
 	<title>HTML Base</title>
+	<base href="C:/Users/fernando.lima/Desktop/testegit/estudobase/imgs/">
 	<style>
 		.imag {
-			width:400px;
+			max-width:400px;
 			height:400px;
 			
 		}
-		.teste {
-			height:450px;
-			width: 450px;
+		.logoacupula {
+			height: 450px;
+			width:  450px;
 			border:none;
+			max-width:100%;
+			max-height:100%;
 		}
 		div{
 			content: "";
@@ -52,7 +62,7 @@
 		
 		}
 		h1 {
-			font-size:75px;
+			font-size:7vw;
 			color:gray;
 			font-family:courier;
 		}
@@ -95,8 +105,9 @@
 		}
 	</style>
 
-</head>
+   </head>
    <body>
+	<header>
 	<ul id="home">
 		<li class="diferente"><a href="#home">Home</a></li>
 		<li class="diferente"><a href="#fotos">Fotos</a></li>
@@ -106,7 +117,7 @@
 	<!-- Comentario de codigo é sempre bem vindo para facilitar a manutenção do mesmo -->
 
 	<a href="#empresa">
-		<img src="acupula.jpg" alt="icone da acupula" style="float:right;width:250;height:250;">
+		<img src="acupula.jpg" class="logoacupula" alt="icone da acupula" style="float:right;">
 	</a>
         <h1 class="titulo">
 		<cite>Estudo Base</cite>
@@ -117,6 +128,7 @@
 	<h3 class="fundo">
 		Acupula
 	</h3>
+	</header>
         <p>
              <strong>Este documento html será a base do estudo de estagio na Acupula</strong>
         </p>    
@@ -151,11 +163,11 @@
 	<script>
 		function funcaoiframe() {
 		document.getElementById("siteacoplado").style.width = "1250px";
-		document.getElementById("siteacoplado").style.height = "300px";
+		document.getElementById("siteacoplado").style.height = "500px";
 		document.getElementById("siteacoplado").style.border = "none";
 		}
 	</script>
-	<iframe id="siteacoplado" class="teste" src="acupula.jpg" name="exemploiframe"></iframe><br>
+	<iframe id="siteacoplado" class="logoacupula" src="acupula.jpg" name="exemploiframe"></iframe><br>
 	<noscript>Sem suporte para JavaScript!</noscript>
 
 	
