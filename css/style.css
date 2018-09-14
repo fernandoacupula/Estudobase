@@ -1,8 +1,242 @@
 ﻿body {
-	background-image:url("C:\Users\fernando.lima\Desktop\testegit\estudobase\imgs/ecommerce.jpg");
-	/*margin-right: 200px;
-	/*background-repeat: no-repeat;
+	background-image:url("C:/Users/fernando.lima/Desktop/testegit/estudobase/imgs/ecommerce.jpg");
+	margin-right: 300px;
+	background-repeat: no-repeat;
 	background-attachment:fixed;
-	background-position: right top;*/
+	background-position: right top;
+	background-color:#efefef;
+	color: black;
+	font-size:1,5vw;
+	font-family:"Arial", Arial, Helvetica, sans-serif;
+	font-size:1,5em;
+}
+#fotos{float: left;
+	   opacity: 0.4;
+}
+.ativo{
+	background-color:whitesmoke ;
+	color:#1a3300;
+}
+#fotos:hover{opacity: 1.0;}
+.titulo {
+	color: #1a3300		;
+	text-align: center;
+	padding: 10px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:1,5em;
+} 
+/*clear fix hack doidera usado pra consertar overflow de imagem q e maior que o div
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}*/
+ul  {
+	list-style-type:none ; 
+	margin: 0;
+	padding:0;
+	overflow: hidden ;
+	background-color: 	hsl(206, 100%, 95%, 0.2) ;
+}	
+li.diferente {
+	float:left ;
+	border-right: 1px solid whitesmoke;			
+}
+li.diferente a {
+	display: block   ;
+	color:#1a3300    ;
+	text-align: center    ;
+	padding: 10px  ;
+	text-decoration:none ;
+}
+li.diferente a:hover { 
+	background-color: whitesmoke ;
+}				
+#home{
+	border:20px hidden ;
+	position: sticky;
+    top: 0;
+}
+.bordatitulos{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #558000;
+	border-radius: 7px;
+}
+.tabela {
+    border-collapse: collapse;
+    max-width: 100%;
+}
 
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:hover{background-color:  #009999;
+}
+
+tr:nth-child(even) {background-color: #ff99cc;
+}
+
+.tituloespaçado {
+	letter-spacing:4px;
+}
+.geradordelero{
+	text-indent: 50px;
+}
+.tamanhomapa{
+	max-width:400px;
+	height:400px;
+}
+.centralizados{
+	margin:auto;
+}
+.imag {		
+		max-width:400px;
+		height:400px;
+		
+}
+.logoacupula {
+		height: 450px;
+		width:  450px;
+		border:none;
+		margin-left:auto;
+		margin-right: auto;
+		display: block;
+		max-width:100%;
+		max-height:100%;
+}
+.divisoes{
+		content: "";
+		display: table;
+		clear:both;
+		box-sizing:inherit;
+}
+
+.fundo{
+		background-image:url(space.jpg);
+		
+	
+}
+#arrastar, #largar {
+			float: left;
+			max-width: 100px;
+			height: 35px;
+			margin: 10px;
+			padding: 10px;
+		   border: 1px solid black;
+}
+h1 {
+		font-size:7vw;
+		color:gray;
+		text-align:center;
+		font-family:"Times New Roman", Times, serif;
+		font-size:1,5em;
+}
+p  {
+		color: green;
+		font-family:arial;
+		font-size:115%;
+}
+h2  {
+		border: 1px solid powderblue;
+		font-family:"Times New Roman", Times, serif;
+		font-size:1,5em;
+}
+h3  {
+		 padding: 15px;
+		 color:gray;
+		 font-family:"Times New Roman", Times, serif;
+		font-size:1,5em;
+}
+blockquote {
+		text-align:center; color:DodgerBlue;
+}
+#importante {
+		text-align:right;
+}
+a:hover{
+	color:red;
+}
+
+a {
+		color:black;
+		border:0;
+}
+a:visited {
+		color: none;
+		
+}
+p.especiais{
+	color:red;
+}
+.api{
+	text-align:center;
+}
+.flip:hover .tabela {
+	display:block;
+}
+.tabela {
+    display: none;
+}
+/* CSS da galeria*/ 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/*css do form*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[name="googlesearch"] {
+    background-image: url('C:Users/fernando.lima/Desktop/testegit/estudobase/imgs/searchicon.png');
+	width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
 }

@@ -2,6 +2,7 @@
 <html>
     <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- reiniciar o conteudo a cada 30 segundos <meta http-equiv="refresh" content="30"> -->
 	<!-- palavras chave para search engines, e browsers -->
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
@@ -10,139 +11,26 @@
 	<!-- todo documento html pede um title -->
 	<title>HTML Base</title>
 	<base href="C:/Users/fernando.lima/Desktop/testegit/estudobase/">
-	<style>
-		body{
-		
-		background-image:url("imgs/ecommerce.jpg");
-		}
-		.imag {
-			max-width:400px;
-			height:400px;
-			
-		}
-		.logoacupula {
-			height: 450px;
-			width:  450px;
-			border:none;
-			max-width:100%;
-			max-height:100%;
-		}
-		.divisoes{
-			content: "";
-			display: table;
-			clear:both;
-			box-sizing:inherit;
-		}
-		.titulo {
-    			background-color: #66bbff;
-    			color: white;
-    			padding: 10px;
-			text-align: center;
-		} 
-		ul  {
-			list-style-type:none ; 
-			margin: 0;
-			padding:0;
-			overflow: hidden ;
-			background-color: #66bbff ;
-		}	
-		li.diferente {
-			float:left ;		
-		}
-		li.diferente a {
-			display: block   ;
-			color:white    ;
-			text-align: center    ;
-			padding: 10px  ;
-			text-decoration:none ;
-		}
-		li.diferente a:hover { 
-			background-color: #111111 ;
-		}				
-		.fundo{
-			background-image:url(space.jpg);
-			
-		
-		}
-		#arrastar, #largar {
-    			float: left;
-    			width: 100px;
-    			height: 35px;
-    			margin: 10px;
-   	 		padding: 10px;
-   			border: 1px solid black;
-		}
-		h1 {
-			font-size:7vw;
-			color:gray;
-			font-family:sans-serif;
-			text-align:center;
-		}
-		p  {
-			color: green;
-			font-family:arial;
-			font-size:115%;
-		}
-		h2  {
-			border: 1px solid powderblue;
-		}
-		h3  {
-			 padding: 15px;
-			 color:gray;
-		}
-		blockquote {
-			text-align:center; color:DodgerBlue;
-		}
-		#importante {
-			text-align:right;
-		}
-		a {
-			color:black
-			text-decoration: none;
-			border:0;
-		}
-		a:visited {
-			color: none;
-			
-		}
-		table, td, th { 
-			border: 1px solid black;
-			border-collapse: collapse;
-		}
-		td, th {
-			
-			padding: 15px;
-		}
-		th {
-			text-align: left;
-		}
-		p.especiais{
-		color:red;
-		}
-		.api{
-		text-align:center;
-		}
-	</style>
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
    </head>
    <body>
 	<header>
 	<ul id="home">
-		<li class="diferente"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/Arquivohtml.htm#home">Home</a></li>
-		<li class="diferente"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/Arquivohtml.htm#fotos">Fotos</a></li>
+		<li class="diferente ativo"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.htm#home">Home</a></li>
+		<li class="diferente"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.htm#fotos">Fotos</a></li>
 		<li class="diferente"><a href="https://www.acupula.com.br">A Empresa</a></li>
-		<li class="diferente"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/Arquivohtml.htm#empresa">Saiba mais</a></li>
+		<li class="diferente"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.htm#empresa">Saiba mais</a></li>
 	</ul>
 	<!-- Comentario de codigo é sempre bem vindo para facilitar a manutenção do mesmo -->
 
-	<a>
+	<!--<a>
 		<img src="imgs/acupula.jpg" class="logoacupula" alt="icone da acupula" style="float:right;">
-	</a>
-        <h1 class="titulo">
+	</a>-->
+        <h1 class="titulo centralizados">
 		<cite>Estudo Base</cite>
 	</h1>
 
-	<h2 class="titulo">
+	<h2 class="titulo centralizados">
 		Estágio
 	</h2>
 	<h3 class="fundo">
@@ -160,7 +48,58 @@
 			document.getElementById("siteacoplado").style.border = "none";
 		}		
 	</script> 
+	<p class="geradordelero">
+		<h3>
+			Lorem Ipsum
+		</h3>
+		<h4>Uma maravilha da internet</h4>
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu viverra eros. 
+		Quisque nibh nunc, consequat ac elit ac, aliquet tristique ex. Pellentesque ornare eleifend risus sit
+		amet bibendum. Morbi pulvinar aliquet laoreet. Praesent lorem odio,
+		vestibulum et ipsum ut, congue ultrices tellus.
+		Morbi tincidunt nunc et mauris porttitor gravida.
+		Aenean lobortis purus est, id consequat nunc fringilla vitae.
+		Integer sodales libero eu posuere egestas. Proin cursus egestas sem.
+		Proin enim neque, rutrum ac convallis vitae, dapibus sed ex.
+		Proin purus quam, pharetra eu fringilla non, condimentum sed urna.
+		Sed in risus urna. Cras scelerisque ipsum ac diam porttitor bibendum.
+		Praesent finibus lacus mauris, vitae imperdiet ex suscipit eu.
+		Ut aliquam ipsum sit amet ex mollis convallis. Suspendisse potenti.
+	</p>
+	<div class="flip">
+	<p><a>Exibir tabela</a></p>
 	
+	 	<table class="tabela" id="table">
+			<tr>
+			  <th>Primeiro Nome</th>
+			  <th>Ultimo Nome</th>
+			  <th>Pontos</th>
+			</tr>
+			<tr>
+			  <td>Fernando</td>
+			  <td>Marcos</td>
+			  <td>$100</td>
+			</tr>
+			<tr>
+			  <td>Bruno</td>
+			  <td>Arlindo</td>
+			  <td>$150</td>
+			</tr>
+			<tr>
+			  <td>José</td>
+			  <td>Josias</td>
+			  <td>$300</td>
+			</tr>
+			<tr>
+		  	    <td>Wellington</td>
+		  		<td>Adão</td>
+		  		<td>$250</td>
+			</tr>
+	  	</table>
+	</div>
+
 	<p class="especiais">
 		Um exemplo de letra especial:&euro;<br>
 		Um exemplo de letra especial:&sum;<br>
@@ -213,15 +152,44 @@
 		Rua Lucas Nogueira<br>
 		Atibaia
 	</address>
-	<div id="fotos" class="divisoes">
-		<img src="imgs/coala.jpg" alt="coala" class="imag" >
-		<img  src="imgs/savana.jpg" alt="savana" class="imag" >
-		<img  src="imgs/iglu.jpg" alt="iglu" class="imag">
-	</div>
-	<br>
+	<div class="gallery">
+		<a target="_blank" href="imgs/space.jpg">
+		  <img src="imgs/space.jpg" alt="5Terre" width="600" height="400">
+		</a>
+		<div class="desc">Add a description of the image here</div>
+	  </div>
+	  
+	  <div class="gallery">
+		<a target="_blank" href="imgs/savana.jpg">
+		  <img src="imgs/savana.jpg" alt="Forest" width="600" height="400">
+		</a>
+		<div class="desc">Add a description of the image here</div>
+	  </div>
+	  
+	  <div class="gallery">
+		<a target="_blank" href="imgs/coala.jpg">
+		  <img src="imgs/coala.jpg" alt="Northern Lights" width="600" height="400">
+		</a>
+		<div class="desc">Add a description of the image here</div>
+	  </div>
+	  
+	  <div class="gallery">
+		<a target="_blank" href="imgs/iglu.jpg">
+		  <img src="imgs/iglu.jpg" alt="Mountains" width="600" height="400">
+		</a>
+		<div class="desc">Add a description of the image here</div>
+	  </div>
+	
+	<!--<div class="divisoes">
+		<img src="imgs/coala.jpg" alt="coala" class="imag" id="fotos" >
+		<img  src="imgs/savana.jpg" alt="savana" class="imag" id="fotos" >
+		<img  src="imgs/iglu.jpg" alt="iglu" class="imag" id="fotos">
+	</div>-->
+	<div></div>
 	<!-- metodo get para dados normais, porem tem limite de caracteres -->
 	<!-- metodo post para dados sensiveis, que precisam ser escondidos, sem limite de caractere -->
 	<form action="iglu.jpg" method="post" target="_blank" autocomplete="on">
+		
 		<fieldset>
 			<legend> Informações aleatorias que ainda não serão usadas(Testes de input)</legend>
   			Seu nome:<br>
@@ -238,7 +206,7 @@
 			</select>
 			<br><br>
 			<legend>Se quiser mandar textao vai la, mas é pra nada:</legend>
-			<textarea name="textao" rows="5" cols="30">Programar é daora.</textarea>
+			<textarea name="textao" rows="5" cols="30" style="resize:none;">Programar é daora.</textarea>
 			<legend>Escolha uma data legal ai</legend>
 			<input type="date" name="data">
 			<legend>Temos a opção com hora</legend>
@@ -249,12 +217,12 @@
  			<input type="search" name="googlesearch">
 			<input type="submit" value="Pesquisar"><br>
 			<br><br>
-			<input type="image" src="imgs/salvar.jpg" alt="Submit" width="30" height="30">
-			<input type="reset" value="Resetar"><br>
+			<i class="fa fa-redo-alt"></i>
+			<i class="fa fa-save"></i><br>
 		</fieldset>
 	</form>
 	<h3>Mapa da região</h3>
-	<div id="mapa" style="width:400px;height:400px;">Meu mapinha vai vim aqui</div>
+	<div id="mapa" class="tamanhomapa">Meu mapinha vai vim aqui</div>
 	<script>
 		function mapa() {
 				var opcaomapa = {
@@ -264,7 +232,7 @@
 				}
 			var mapa= new google.maps.Map(document.getElementById("mapa"),opcaomapa);
 		}
-	</script >
+	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?callback=mapa"></script><br>
 	<p><h3>Aplicando audio no html</h3></p>
 	<audio controls>
@@ -272,7 +240,7 @@
 	</audio>
 	<p><h3>Videos do youtube no html</h3></p>
 	<iframe class="logoacupula" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
-	<p><h1> Testando API's</h1></p>
+	<p ><h1 class="bordatitulos"> Testando API's</h1></p>
 	<h3 class="api">Geolocation</h3>
 	<p>Clique no botao pra pegar as coordenadas.</p>
 
