@@ -1,59 +1,82 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- reiniciar o conteudo a cada 30 segundos <meta http-equiv="refresh" content="30"> -->
-	<!-- palavras chave para search engines, e browsers -->
-	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-	<!-- para indicar ao browser o nivel de scale da pagina, sempre usar, sempre necessario -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- todo documento html pede um title -->
-	<title>HTML Base</title>
-	<base href="C:/Users/fernando.lima/Desktop/testegit/estudobase/">
-	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Work+Sans" rel="stylesheet">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- reiniciar o conteudo a cada 30 segundos <meta http-equiv="refresh" content="30"> -->
+		<!-- palavras chave para search engines, e browsers -->
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<!-- para indicar ao browser o nivel de scale da pagina, sempre usar, sempre necessario -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- todo documento html pede um title -->
+		<title>HTML Base</title>
+		<base href="C:/Users/fernando.lima/Desktop/testegit/estudobase/">
+		<link rel="stylesheet" type="text/css" href="css/style.css"> 
    </head>
    <body>
-	<header>
-	<ul id="home">
-		<li class="diferente ativo"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.htm#home">Home</a></li>
-		<li class="diferente"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.htm#fotos">Fotos</a></li>
-		<li class="diferente"><a href="https://www.acupula.com.br">A Empresa</a></li>
-		<li class="diferente"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.htm#empresa">Saiba mais</a></li>
-	</ul>
+		<div class="tituloscabecario" id="home">
+				<h1 class="titulo centralizados">
+					Estudo Base
+				</h1>
+		
+				<h2 class="titulo centralizados">
+					Estágio
+				</h2>
+				<h3 class="fundo">
+					Acúpula
+				</h3>
+		</div>
+		<ul class="navigationbar">
+				<li class="navigationbar"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#home">Home</a></li>
+				<li class="navigationbar dropdown"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#fotos" class="dropbtn">Fotos</a>
+					<div class="navconteudo" >
+						<a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#fotos" id="letrapreta">Foto 1</a>
+						<a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#fotos" id="letrapreta">Foto 2</a>
+						<a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#fotos" id="letrapreta">Foto 3</a>
+					</div>
+				</li>
+				<li class="navigationbar estilopradireita" ><a class="ativo" href="https://www.acupula.com.br" target="_blank">A Empresa</a></li>
+				<li class="navigationbar"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.htm#empresa">Saiba mais</a></li>
+		</ul>
 	<!-- Comentario de codigo é sempre bem vindo para facilitar a manutenção do mesmo -->
 
 	<!--<a>
-		<img src="imgs/acupula.jpg" class="logoacupula" alt="icone da acupula" style="float:right;">
-	</a>-->
-        <h1 class="titulo centralizados">
-		<cite>Estudo Base</cite>
-	</h1>
-
-	<h2 class="titulo centralizados">
-		Estágio
-	</h2>
-	<h3 class="fundo">
-		Acupula
-	</h3>
-	</header>
-        <p>
-             <strong>Este documento html será a base do estudo de estagio na Acupula</strong>
-        </p>   
-	<script>
 		
+	</a>-->
+        <div class="introducao quadros clearfix">
+			<img src="imgs/acupula.jpg" class="logoacupula estilopradireita" alt="logo">
+			<h2><strong>Este documento html será a base do estudo de estagio na Acúpula</strong></h2>
+			<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu viverra eros. 
+					Quisque nibh nunc, consequat ac elit ac, aliquet tristique ex. Pellentesque ornare eleifend risus sit
+					amet bibendum. Morbi pulvinar aliquet laoreet. Praesent lorem odio,
+					vestibulum et ipsum ut, congue ultrices tellus.
+					Morbi tincidunt nunc et mauris porttitor gravida.
+					Aenean lobortis purus est, id consequat nunc fringilla vitae.
+					Integer sodales libero eu posuere egestas. Proin cursus egestas sem.
+					Proin enim neque, rutrum ac convallis vitae, dapibus sed ex.
+					Proin purus quam, pharetra eu fringilla non, condimentum sed urna.
+					Sed in risus urna. Cras scelerisque ipsum ac diam porttitor bibendum.
+					Praesent finibus lacus mauris, vitae imperdiet ex suscipit eu.
+					Ut aliquam ipsum sit amet ex mollis convallis. Suspendisse potenti.
+			</p>
+        </div>
+	</div>
+	<p></p>
+	<script>
 		function funcaoiframe() {
 			document.getElementById("siteacoplado").style.width = "1250px";
 			document.getElementById("siteacoplado").style.height = "500px";
 			document.getElementById("siteacoplado").style.border = "none";
 		}		
 	</script> 
-	<p class="geradordelero">
-		<h3>
+
+	<div class="quadros conteudo">
+		<h2>
 			Lorem Ipsum
-		</h3>
-		<h4>Uma maravilha da internet</h4>
-	</p>
+		</h2>
+		<h4>Uma maravilha da internet, 14 set, 2018</h4>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu viverra eros. 
 		Quisque nibh nunc, consequat ac elit ac, aliquet tristique ex. Pellentesque ornare eleifend risus sit
@@ -68,83 +91,93 @@
 		Praesent finibus lacus mauris, vitae imperdiet ex suscipit eu.
 		Ut aliquam ipsum sit amet ex mollis convallis. Suspendisse potenti.
 	</p>
-	<div class="flip">
-	<p><a>Exibir tabela</a></p>
-	
-	 	<table class="tabela" id="table">
-			<tr>
-			  <th>Primeiro Nome</th>
-			  <th>Ultimo Nome</th>
-			  <th>Pontos</th>
-			</tr>
-			<tr>
-			  <td>Fernando</td>
-			  <td>Marcos</td>
-			  <td>$100</td>
-			</tr>
-			<tr>
-			  <td>Bruno</td>
-			  <td>Arlindo</td>
-			  <td>$150</td>
-			</tr>
-			<tr>
-			  <td>José</td>
-			  <td>Josias</td>
-			  <td>$300</td>
-			</tr>
-			<tr>
-		  	    <td>Wellington</td>
-		  		<td>Adão</td>
-		  		<td>$250</td>
-			</tr>
-	  	</table>
 	</div>
+		<div class="quadros ">
+			<div class="qtabela">
+			<p><a>Exibir tabela</a></p>
+	 			<table class="tabela">
+					<tr>
+					  <th>Primeiro Nome</th>
+					  <th>Ultimo Nome</th>
+					  <th>Pontos</th>
+					</tr>
+					<tr>
+					  <td>Fernando</td>
+					  <td>Marcos</td>
+					  <td>$100</td>
+					</tr>
+					<tr>
+					  <td>Bruno</td>
+					  <td>Arlindo</td>
+					  <td>$150</td>
+					</tr>
+					<tr>
+					  <td>José</td>
+					  <td>Josias</td>
+					  <td>$300</td>
+					</tr>
+					<tr>
+			  		    <td>Wellington</td>
+			  			<td>Adão</td>
+			  			<td>$250</td>
+					</tr>
+	  			</table>
+			</div>
+		</div>
+		<div class="caracespeciais quadros">
+			<h2>Inserção de caracteres especiais em html5</h2>
+			<h3>Aplicando tecnicas, 12 set, 2018.
+			</h3>
+			<p>
+				Um exemplo de letra especial:&euro;<br>
+				Um exemplo de letra especial:&sum;<br>
+				Um exemplo de letra especial:&Delta;<br>
+				Um exemplo de letra especial:&trade;<br>
+				Um exemplo de letra especial:&copy;<br>
+				Um exemplo de letra especial:&reg;<br>
+				Um exemplo de letra especial:&trade;<br>	
+			</p>
+		</div>
+		<div class="quadros citacao">
+			<h2>Exemplo de usar citação em html</h2>
+			<h3>Mais exemplos de tags de html, 13 set, 2018</h3>
+			<hr>
+			<blockquote cite="https://www.pensador.com/autor/bill_gates/">		
 
-	<p class="especiais">
-		Um exemplo de letra especial:&euro;<br>
-		Um exemplo de letra especial:&sum;<br>
-		Um exemplo de letra especial:&Delta;<br>
-		Um exemplo de letra especial:&trade;<br>
-		Um exemplo de letra especial:&copy;<br>
-		Um exemplo de letra especial:&reg;<br>
-		Um exemplo de letra especial:&trade;<br>	
-	</p>
+	    	 <em>"Todo mundo tem cliente. Só traficante e analista de sistemas é que tem usuário."</em>
+
+			</blockquote>
+			<p id="importante">
+				Bill Gates
+			</p>
+		</div>
+		<div class="outros quadros">
+			<h2>Picture, tooltip e lista ordenada</h2>
+			<h3>Outros varios testes de html aleatorios, 17 set, 2018</h3>
+			<p title="OLHA SÓ, UM TOOLTIP!" >
+				Teste de tooltip.<br>
+				<bdo dir="rtl">Teste de redirecionamento.</bdo>
+			</p>
+			<ol type="I">
+				<li >Abreviando-><abbr class="abreviar" title="Exemplo">Ex</abbr> </li><br>
+				<li >Exemplo </li><br>
+				<li >Exemplo de botao</li><br>
+			</ol>
+			<button>
+				Olha que botão maneiro feito de HTML!
+			</button>
+			<br>
+			<br>
+			<br>
+			<div class="nuvem" >OLA TUDO BEM</div>
+		</div>
 	<hr>
-	
-	<blockquote cite="https://www.pensador.com/autor/bill_gates/">
-
-	     <em>"Todo mundo tem cliente. Só traficante e analista de sistemas é que tem usuário."</em>
-
-	</blockquote>
-	<p id="importante">
-		Bill Gates
-	</p>
-	<p title="OLHA SÓ, UM TOOLTIP!" >
-		Teste de tooltip.<br>
-		<bdo dir="rtl">Teste de redirecionamento.</bdo>
-	</p>
-	<ol type="I">
-		<li >Abreviando-><abbr title="Exemplo">Ex</abbr> </li>
-		<li >Exemplo </li>
-		<li >Exemplo de botao</li>
-	</ol>
-	<button>
-		Olha que botão maneiro feito de HTML!
-	</button>
-	<br>
-	<picture>
-		<source media="(min-width: 500px)" srcset="imgs/clouds.jpg">
-		<source media="(min-width:250px)" srcset="imgs/space.jpg">
-		<img src="imgs/acupula.jpg" alt="acupula" style="width:auto;">
-	</picture>
-	<hr>
-	<iframe id="siteacoplado" class="logoacupula" src="imgs/acupula.jpg" name="exemploiframe"></iframe><br>
-	
-	<noscript>Sem suporte para JavaScript!</noscript>
-
+	<div class="quadros">
+		<iframe id="siteacoplado" class="logoacupula" src="imgs/acupula.jpg" name="exemploiframe"></iframe><br>
+		<noscript>Sem suporte para JavaScript!</noscript>
+	</div>
 	<hr>	
-
-	<address id="empresa">
+	<address id="empresa" CLASS="quadros">
 		Este documento foi escrito por Fernando Lima.<br>
 		saiba mais:<br>
 		<a href="https://www.acupula.com.br" target="_blank" title="Visite a pagina da empresa">www.acupula.com.br</a><br>
@@ -152,46 +185,54 @@
 		Rua Lucas Nogueira<br>
 		Atibaia
 	</address>
-	<div class="gallery">
-		<a target="_blank" href="imgs/space.jpg">
-		  <img src="imgs/space.jpg" alt="5Terre" width="600" height="400">
-		</a>
-		<div class="desc">Add a description of the image here</div>
-	  </div>
+	<hr>
+	<div class="quadros clearfix">
+		<h2>Galeria de imagens:</h2>
+		<div class="gallery">
+			<a target="_blank" href="imgs/space.jpg">
+		 	 	<img src="imgs/space.jpg" id="fotos" alt="espaço sideral">
+			</a>
+			<div class="desc">
+				Espaço sideral
+			</div>
+	 	 </div>
 	  
-	  <div class="gallery">
-		<a target="_blank" href="imgs/savana.jpg">
-		  <img src="imgs/savana.jpg" alt="Forest" width="600" height="400">
-		</a>
-		<div class="desc">Add a description of the image here</div>
-	  </div>
+	 	 <div class="gallery">
+			<a target="_blank" href="imgs/savana.jpg">
+			  <img src="imgs/savana.jpg" id="fotos" alt="Savan africana" >
+			</a>
+			<div class="desc">
+				Savana
+			</div>
+	 	 </div>
+
+	 	 <div class="gallery">
+			<a target="_blank" href="imgs/coala.jpg">
+			  <img src="imgs/coala.jpg" id="fotos" alt="Coala adulto">
+			</a>
+			<div class="desc">
+				Coala adulto
+			</div>
+	     </div>
 	  
-	  <div class="gallery">
-		<a target="_blank" href="imgs/coala.jpg">
-		  <img src="imgs/coala.jpg" alt="Northern Lights" width="600" height="400">
-		</a>
-		<div class="desc">Add a description of the image here</div>
-	  </div>
-	  
-	  <div class="gallery">
-		<a target="_blank" href="imgs/iglu.jpg">
-		  <img src="imgs/iglu.jpg" alt="Mountains" width="600" height="400">
-		</a>
-		<div class="desc">Add a description of the image here</div>
-	  </div>
-	
-	<!--<div class="divisoes">
-		<img src="imgs/coala.jpg" alt="coala" class="imag" id="fotos" >
-		<img  src="imgs/savana.jpg" alt="savana" class="imag" id="fotos" >
-		<img  src="imgs/iglu.jpg" alt="iglu" class="imag" id="fotos">
-	</div>-->
-	<div></div>
+		  <div class="gallery">
+			<a target="_blank" href="imgs/iglu.jpg">
+			  <img src="imgs/iglu.jpg" id="fotos" alt="Iglu">
+			</a>
+			<div class="desc">
+				Iglu
+			</div>
+		  </div>
+		  <h3>Ultima atualização dia 17 de setembro de 2018.</h3>
+	</div>
 	<!-- metodo get para dados normais, porem tem limite de caracteres -->
 	<!-- metodo post para dados sensiveis, que precisam ser escondidos, sem limite de caractere -->
+	<div class="quadros ">
+		<h1>Testes e aplicações de Input</h1>
 	<form action="iglu.jpg" method="post" target="_blank" autocomplete="on">
 		
 		<fieldset>
-			<legend> Informações aleatorias que ainda não serão usadas(Testes de input)</legend>
+			<legend> Informações aleatorias que ainda não serão usadas</legend>
   			Seu nome:<br>
   			<input type="text" name="nome" value="Teste"><br>
   			Setor:<br>
@@ -214,87 +255,101 @@
 			<legend>Insira seu email</legend>
 			<input type="email" name="email" required placeholder="Insira seu email aqui"><br>
 			Search Google:<br>
- 			<input type="search" name="googlesearch">
-			<input type="submit" value="Pesquisar"><br>
-			<br><br>
-			<i class="fa fa-redo-alt"></i>
-			<i class="fa fa-save"></i><br>
+			 <input type="search" name="googlesearch">
+			 <input type="submit" name="pesquisar" style="width:100%">
+			<legend>Deseja salvar um arquivo ?</legend>
+			<input type="file" name="arquivo">
+			<input type="submit" value="Salvar">
+			<input type="reset" value="Cancelar">
 		</fieldset>
 	</form>
-	<h3>Mapa da região</h3>
-	<div id="mapa" class="tamanhomapa">Meu mapinha vai vim aqui</div>
-	<script>
-		function mapa() {
-				var opcaomapa = {
-					center: new google.maps.LatLng(-23.1175, -46.5567),
-					zoom: 15,
-					mapTypeId: google.maps.MapTypeId.TERRAIN
+	</div>
+	<div class="quadros">
+		<h2>Mapa da região</h2>
+		<div id="mapa" class="tamanhomapa">Meu mapinha vai vim aqui</div>
+			<script>
+				function mapa() {
+						var opcaomapa = {
+							center: new google.maps.LatLng(-23.1175, -46.5567),
+							zoom: 15,
+							mapTypeId: google.maps.MapTypeId.TERRAIN
+						}
+						var mapa= new google.maps.Map(document.getElementById("mapa"),opcaomapa);
 				}
-			var mapa= new google.maps.Map(document.getElementById("mapa"),opcaomapa);
-		}
-	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?callback=mapa"></script><br>
-	<p><h3>Aplicando audio no html</h3></p>
-	<audio controls>
-		<source src="audio/Sleep.mp3" type="audio/mpeg">
-	</audio>
-	<p><h3>Videos do youtube no html</h3></p>
-	<iframe class="logoacupula" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
-	<p ><h1 class="bordatitulos"> Testando API's</h1></p>
-	<h3 class="api">Geolocation</h3>
-	<p>Clique no botao pra pegar as coordenadas.</p>
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?callback=mapa"></script><br>
+	</div>	
+	<div class="quadros">
+		<h2>Aplicando audio no html</h2>
+		<audio controls>
+			<source src="audio/Sleep.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<div class="quadros">
+		<h2>Videos do youtube no html</h2>
+		<iframe class="logoacupula" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+	</div>
+	<div class="quadros listaapi">
+		<h1 class="bordatitulos"> Testando API's</h1>
+		<h2>Geolocation</h2>
+		<p>Clique no botao pra pegar as coordenadas.</p>
 
-	<button onclick="getLocation()">Tente!</button>
-	<div id="mapholder"></div>
-	<p id="demo"></p>
-	<script>
-		var x = document.getElementById("demo");
-		function getLocation() {
-   			if (navigator.geolocation) {
-       				 navigator.geolocation.getCurrentPosition(showPosition);
-    			} else {
+		<button onclick="getLocation()">Tente!</button>
+		<div id="mapholder"></div>
+		<p id="demo"></p>
+		<script>
+			var x = document.getElementById("demo");
+			function getLocation() {
+   				if (navigator.geolocation) {
+       				navigator.geolocation.getCurrentPosition(showPosition);
+    			}   
+				else {
         			x.innerHTML = "Geolocation is not supported by this browser.";
+				}
 			}
-		}
-		function showPosition(position) {
-    			x.innerHTML = "Latitude: " + position.coords.latitude + 
-    			"<br>Longitude: " + position.coords.longitude; 
-		}
+			function showPosition(position) {
+    				x.innerHTML = "Latitude: " + position.coords.latitude + 
+    				"<br>Longitude: " + position.coords.longitude; 
+			}
 	
-		function showPosition(position) {
-    		var latlon = position.coords.latitude + "," + position.coords.longitude;
-    		var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    		+latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
-    		document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-	}
-	</script>
-	<br> Funciona melhor com dispositivos que tenham GPS
-	<p><h3 class="api">Arrastar e largar</h3><br>
-	<script>
-		function allowDrop(ev) {
-  	 		ev.preventDefault();
-		}	
+			function showPosition(position) {
+    			var latlon = position.coords.latitude + "," + position.coords.longitude;
+    			var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    			+latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    			document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+			}
+		</script>
+		 <p>Funciona melhor com dispositivos que tenham GPS</p>
+		<h2>Arrastar e largar</h2><br>
+		<script>
+			function allowDrop(ev) {
+  	 			ev.preventDefault();
+			}	
 
-		function drag(ev) {
- 	   		ev.dataTransfer.setData("text", ev.target.id);
-		}
+			function drag(ev) {
+ 	   			ev.dataTransfer.setData("text", ev.target.id);
+			}
 
-		function drop(ev) {
-			ev.preventDefault();
+			function drop(ev) {
+				ev.preventDefault();
     			var data = ev.dataTransfer.getData("text");
     			ev.target.appendChild(document.getElementById(data));
-		}
-	</script>
-	<div id="arrastar" ondrop="drop(event)" ondragover="allowDrop(event)">
-  	<img src="imgs/acupulaarrastar.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
-	</div>
+			}
+		</script>
+		<div id="arrastar" ondrop="drop(event)" ondragover="allowDrop(event)">
+  			<img src="imgs/acupulaarrastar.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+		</div>
 
-	<div id="largar" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br><br>
-	<p style="text-align:center;"><h3 class="api">Web Storage</h3>
-	Serve para guardar arquivos tanto permanente quanto até a aba ser fechada(sem usar cookies)
-	</p>
-	<p style="text-align:center;"><h3 class="api">Web Workers</h3>
-	Serve para trabalhar na pagina em background, sem que o desempenho da mesma seja comprometido
-	</p>
+		<div id="largar" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br><br>
+		<br>
+		<h2>Web Storage</h2>
+		<p>
+			Serve para guardar arquivos tanto permanente quanto até a aba ser fechada(sem usar cookies)
+		</p>
+		<h2>Web Workers</h2>
+		<p>
+			Serve para trabalhar na pagina em background, sem que o desempenho da mesma seja comprometido
+		</p>
+	</div>
    </body>
 </html>
