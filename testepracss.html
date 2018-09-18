@@ -13,6 +13,7 @@
 		<title>HTML Base</title>
 		<base href="C:/Users/fernando.lima/Desktop/testegit/estudobase/">
 		<link rel="stylesheet" type="text/css" href="css/style.css"> 
+		<script src="js/script.js"></script>
    </head>
    <body>
 		<div class="tituloscabecario" id="home">
@@ -42,9 +43,6 @@
 		</ul>
 	<!-- Comentario de codigo é sempre bem vindo para facilitar a manutenção do mesmo -->
 
-	<!--<a>
-		
-	</a>-->
         <div class="introducao quadros clearfix">
 			<img src="imgs/acupula.jpg" class="logoacupula estilopradireita" alt="logo">
 			<h2><strong>Este documento html será a base do estudo de estagio na Acúpula</strong></h2>
@@ -65,14 +63,6 @@
         </div>
 	</div>
 	<p></p>
-	<script>
-		function funcaoiframe() {
-			document.getElementById("siteacoplado").style.width = "1250px";
-			document.getElementById("siteacoplado").style.height = "500px";
-			document.getElementById("siteacoplado").style.border = "none";
-		}		
-	</script> 
-
 	<div class="quadros conteudo">
 		<h2>
 			Lorem Ipsum
@@ -192,7 +182,7 @@
 			<div class="container" id="aboutme" style="float:right;">
 					<img src="imgs/Fernandolima.jpeg" alt="Avatar" class="image">
 					<div class="overlay">
-					  <div class="text">Coé Rapaziada</div>
+					<div class="text">Coé Rapaziada</div>
 					</div>
 				</div>
 		Este documento foi escrito por Fernando Lima.<br>
@@ -264,7 +254,7 @@
   			Seu nome:<br>
   			<input type="text" name="nome" value="Teste"><br>
   			Setor:<br>
-  			<input type="text" name="setor" value="OutroTeste">
+			<input type="text" name="setor" value="OutroTeste">  
 			<br><br>
 			<legend>Escolha seu time aleatoriamente pra nada</legend>
 			<select name="times">
@@ -284,9 +274,7 @@
 			<input type="email" name="email" required placeholder="Insira seu email aqui"><br>
 			Search Google:<br>
 			 <input type="search" name="googlesearch">
-			 <input type="submit" name="pesquisar" style="width:100%">
-			<legend>Deseja salvar um arquivo ?</legend>
-			<input type="file" name="arquivo">
+			 <input type="submit" name="pesquisar" value="Pesquisar" style="width:100%">
 			<input type="submit" value="Salvar">
 			<input type="reset" value="Cancelar">
 		</fieldset>
@@ -295,16 +283,6 @@
 	<div class="quadros">
 		<h2>Onde estamos localizados:</h2>
 		<div id="mapa" class="tamanhomapa">Meu mapinha vai vim aqui</div>
-			<script>
-				function mapa() {
-						var opcaomapa = {
-							center: new google.maps.LatLng(-23.1175, -46.5567),
-							zoom: 15,
-							mapTypeId: google.maps.MapTypeId.TERRAIN
-						}
-						var mapa= new google.maps.Map(document.getElementById("mapa"),opcaomapa);
-				}
-			</script>
 			<script src="https://maps.googleapis.com/maps/api/js?callback=mapa"></script><br>
 	</div>	
 	<div class="quadros">
@@ -321,49 +299,11 @@
 		<h1 class="bordatitulos"> Testando API's</h1>
 		<h2>Geolocation</h2>
 		<p>Clique no botao pra pegar as coordenadas.</p>
-
-		<button onclick="getLocation()">Tente!</button>
+		<button id="btnMapa" onclick="getLocation()">Tente!</button>
 		<div id="mapholder"></div>
 		<p id="demo"></p>
-		<script>
-			var x = document.getElementById("demo");
-			function getLocation() {
-   				if (navigator.geolocation) {
-       				navigator.geolocation.getCurrentPosition(showPosition);
-    			}   
-				else {
-        			x.innerHTML = "Geolocation is not supported by this browser.";
-				}
-			}
-			function showPosition(position) {
-    				x.innerHTML = "Latitude: " + position.coords.latitude + 
-    				"<br>Longitude: " + position.coords.longitude; 
-			}
-	
-			function showPosition(position) {
-    			var latlon = position.coords.latitude + "," + position.coords.longitude;
-    			var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    			+latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
-    			document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-			}
-		</script>
 		 <p>Funciona melhor com dispositivos que tenham GPS</p>
 		<h2>Arrastar e largar</h2><br>
-		<script>
-			function allowDrop(ev) {
-  	 			ev.preventDefault();
-			}	
-
-			function drag(ev) {
- 	   			ev.dataTransfer.setData("text", ev.target.id);
-			}
-
-			function drop(ev) {
-				ev.preventDefault();
-    			var data = ev.dataTransfer.getData("text");
-    			ev.target.appendChild(document.getElementById(data));
-			}
-		</script>
 		<div id="arrastar" ondrop="drop(event)" ondragover="allowDrop(event)">
   			<img src="imgs/acupulaarrastar.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
 		</div>
@@ -378,6 +318,23 @@
 		<p>
 			Serve para trabalhar na pagina em background, sem que o desempenho da mesma seja comprometido
 		</p>
+	</div>
+	<div class="quadros">
+		<h1>Vamos começar com o JavaScript!</h1>
+		<form action="iglu.jpg" method="post" target="_blank" autocomplete="on" class="calc">
+				<fieldset>
+					<legend>Insira dois números e escolha a operação:</legend>
+					<input type="text" id="txtCalc1" required placeholder="Digite seu número:">
+					<select id="operacao">
+							<option value=+>Somar ("+")</option>
+							<option value=->Subtrair ("-")</option>
+							<option value=*>Multiplicar ("x")</option>
+							<option value="/">Dividir ("/")</option>	
+					</select>
+					<input type="text" id="txtCalc2" required placeholder="Digite seu número:">
+					<input type="text" id="resultado" readonly placeholder="Resultado" style="width: 100%;cursor: not-allowed;">
+					<input type="button" id="btnCalcular" onclick="calculadora(document.getElementById(txtCalc1), document.getElementById(txtCalc2))"> 
+		</form>
 	</div>
    </body>
 </html>
