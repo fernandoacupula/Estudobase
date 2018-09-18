@@ -169,15 +169,66 @@ div.tituloscabecario h1{
 .abreviar:hover{
 	cursor:pointer;
 } 
-/*TERMINAR O CSS E COLOCAR UMA IMAGEM DA NUVEM QUE VIRA A IMAGEM DO ESPAÇO 
-.nuvem{
-	width: auto;
-	height: auto;
-	background: url("C:\Users\fernando.lima\Desktop\testegit\estudobase\imgs\space.jpg");
-}*/
+
 .outros{
 	font-size:115%;
 }
+.transicao{
+	background-image: url("C:/Users/fernando.lima/Desktop/testegit/estudobase/imgs/clouds.jpg");
+	background-size: cover;
+	width: 318px;
+	height: 159px;
+	transition: width 1s, height 1s;
+	transition-duration: 3s;
+	transition-delay: 7s;
+}
+.transicao:hover{
+	width: 299px;
+	height: 168; 
+	background-image: url("C:/Users/fernando.lima/Desktop/testegit/estudobase/imgs/space.jpg");
+
+}
+.animacao{
+    background-image: url("C:/Users/fernando.lima/Desktop/testegit/estudobase/imgs/clouds.jpg");
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+	animation-name: example;
+    animation-duration: 5s;    
+    animation-fill-mode: forwards;  
+}
+@keyframes example {
+    from {left: 0px;}
+	to {
+		left: 400px;
+		background-image: url("C:/Users/fernando.lima/Desktop/testegit/estudobase/imgs/space.jpg");
+	}
+}
+.divanimacao{
+    background-image: url("C:/Users/fernando.lima/Desktop/testegit/estudobase/imgs/clouds.jpg");
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */     /* Safari 4.0 - 8.0 */
+	animation-name: example2;
+	animation-direction: alternate;
+    animation-duration: 5s;    
+    animation-iteration-count: infinite; 
+}
+@keyframes example2 {
+    from {left: 0px;}
+	to {
+		left: 800px;
+		background-image: url("C:/Users/fernando.lima/Desktop/testegit/estudobase/imgs/space.jpg");
+	}
+}
+	
 .logoacupula {
 	height: 450px;
 	width:  450px;
@@ -189,9 +240,11 @@ div.tituloscabecario h1{
 	max-height:100%;
 }
 #empresa{
-	text-indent: 50px;
 	letter-spacing:2px;
+	font-size:1.3em;
+	text-align: center;	
 }
+
 #empresa a, a:visited {
 	color:black;	
 }
@@ -200,6 +253,8 @@ div.tituloscabecario h1{
 }
 #fotos{
 	opacity: 0.4;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
 }
 #fotos:hover{opacity: 1.0;}
 
@@ -231,7 +286,7 @@ div.desc {
 	width:400px;
 	height:400px;
 	text-align: center;
-	transition: width 3s, height 2s;
+	transition: width 2s, height 2s;
 	transition-timing-function: ease-in;
 }
 .tamanhomapa:hover{
@@ -304,7 +359,79 @@ input[name="googlesearch"] {
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
 }
-/*
+img {
+    max-width: 100%;
+    height: auto;
+}
+.tooltip {
+    display: inline-block;
+	border-bottom: 1px dotted black;
+	position: relative;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+	transition: opacity 1s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.container {
+	position: relative;
+	width: 50%;
+  }
+  
+  .image {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+	opacity: 1;
+  }
+  
+  .text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /*clear fix hack doidera usado pra consertar overflow de imagem q e maior que o div
 .clearfix::after {

@@ -37,7 +37,8 @@
 					</div>
 				</li>
 				<li class="navigationbar estilopradireita" ><a class="ativo" href="https://www.acupula.com.br" target="_blank">A Empresa</a></li>
-				<li class="navigationbar"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.htm#empresa">Saiba mais</a></li>
+				<li class="navigationbar"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#empresa">Saiba mais</a></li>
+				<li class="navigationbar"><a href="file:///C:Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#aboutme">Sobre mim</a></li>
 		</ul>
 	<!-- Comentario de codigo é sempre bem vindo para facilitar a manutenção do mesmo -->
 
@@ -169,22 +170,49 @@
 			<br>
 			<br>
 			<br>
-			<div class="nuvem" >OLA TUDO BEM</div>
+			
+			
 		</div>
+		<div class="quadros">
+			<h1 style="text-align: center">Quadro de animações!</h1>
+			Passe o mouse por cima!
+			<div class="transicao" style="margin: 15px;"></div>
+			<div class="divanimacao" style="margin:15px;"></div>
+				<div class="animacao"></div>
+			
+		</div>
+
 	<hr>
 	<div class="quadros">
 		<iframe id="siteacoplado" class="logoacupula" src="imgs/acupula.jpg" name="exemploiframe"></iframe><br>
 		<noscript>Sem suporte para JavaScript!</noscript>
 	</div>
 	<hr>	
-	<address id="empresa" CLASS="quadros">
+	<address id="empresa" CLASS="quadros clearfix">
+			<div class="container" id="aboutme" style="float:right;">
+					<img src="imgs/Fernandolima.jpeg" alt="Avatar" class="image">
+					<div class="overlay">
+					  <div class="text">Coé Rapaziada</div>
+					</div>
+				</div>
 		Este documento foi escrito por Fernando Lima.<br>
+		<a href="https://www.linkedin.com/in/fernando-lima-5a224716a/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+		<a href="https://github.com/fernandoacupula/Estudobase" target="_blank"><i class="fa fa-github"></i></a>
+		<a href="https://www.google.com.br/search?q=vem+de+zap+bb&oq=vem+de+zap+bb&aqs=chrome..69i57.1792j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><i class="fa fa-whatsapp"></i></a>
+		<a href="https://www.google.com.br/search?q=vem+de+zap+bb&oq=vem+de+zap+bb&aqs=chrome..69i57.1792j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><i class="fa fa-facebook-square"></i></a>
+		<a href="https://br.pinterest.com/3fernandodelima/" target="_blank"><i class="fa fa-pinterest"></i></a><br>
 		saiba mais:<br>
 		<a href="https://www.acupula.com.br" target="_blank" title="Visite a pagina da empresa">www.acupula.com.br</a><br>
-		<a href="https://www.acupula.com.br" target="exemploiframe" onclick="funcaoiframe()">Ou abra o site aqui mesmo</a><br>
-		Rua Lucas Nogueira<br>
-		Atibaia
+		<a href="https://www.acupula.com.br" target="exemploiframe" onclick="funcaoiframe()" style="text-decoration: underline;">Ou abra o site aqui mesmo!</a><br>
+		Endereço:<br>
+		<div class="tooltip">Rua Lucas Nogueira Garcês nº 1365
+			<span class="tooltiptext" style="font-size:0.8em;">
+				Uma das principais ruas de Atibaia</span>
+		</div><br>
+		Atibaia - São Paulo - Brasil<br>
+		
 	</address>
+	
 	<hr>
 	<div class="quadros clearfix">
 		<h2>Galeria de imagens:</h2>
@@ -247,7 +275,7 @@
 			</select>
 			<br><br>
 			<legend>Se quiser mandar textao vai la, mas é pra nada:</legend>
-			<textarea name="textao" rows="5" cols="30" style="resize:none;">Programar é daora.</textarea>
+			<textarea name="textao" rows="5" cols="100%" style="resize:none;">Programar é daora.</textarea>
 			<legend>Escolha uma data legal ai</legend>
 			<input type="date" name="data">
 			<legend>Temos a opção com hora</legend>
@@ -265,7 +293,7 @@
 	</form>
 	</div>
 	<div class="quadros">
-		<h2>Mapa da região</h2>
+		<h2>Onde estamos localizados:</h2>
 		<div id="mapa" class="tamanhomapa">Meu mapinha vai vim aqui</div>
 			<script>
 				function mapa() {
