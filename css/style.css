@@ -138,13 +138,14 @@ div.tituloscabecario h1{
 	border-collapse: collapse;
 	width: 100%;
 }
-.qtabela:hover .tabela {
+.btnTabela:hover .tabela {
 	 display: block;
 }
-.qtabela:hover, .qtabela a:hover {
+.btnTabela:hover, .btnTabela a:hover {
 	color:#ff8c1a;
 }
-.qtabela{
+
+.btnTabela{
 	font-size:16px;
 	text-align:center;
 	color:white;
@@ -230,8 +231,8 @@ div.tituloscabecario h1{
 }
 	
 .logoacupula {
-	height: 450px;
-	width:  450px;
+	height: 460px;
+	width:  460px;
 	border:none;
 	margin-left:auto;
 	margin-right: auto;

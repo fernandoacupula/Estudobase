@@ -84,38 +84,6 @@
 		Ut aliquam ipsum sit amet ex mollis convallis. Suspendisse potenti.
 	</p>
 	</div>
-		<div class="quadros ">
-			<div class="qtabela">
-			<p><a>Exibir tabela</a></p>
-	 			<table class="tabela">
-					<tr>
-					  <th>Primeiro Nome</th>
-					  <th>Ultimo Nome</th>
-					  <th>Pontos</th>
-					</tr>
-					<tr>
-					  <td>Fernando</td>
-					  <td>Marcos</td>
-					  <td>$100</td>
-					</tr>
-					<tr>
-					  <td>Bruno</td>
-					  <td>Arlindo</td>
-					  <td>$150</td>
-					</tr>
-					<tr>
-					  <td>José</td>
-					  <td>Josias</td>
-					  <td>$300</td>
-					</tr>
-					<tr>
-			  		    <td>Wellington</td>
-			  			<td>Adão</td>
-			  			<td>$250</td>
-					</tr>
-	  			</table>
-			</div>
-		</div>
 		<div class="caracespeciais quadros">
 			<h2>Inserção de caracteres especiais em html5</h2>
 			<h3>Aplicando tecnicas, 12 set, 2018.
@@ -143,34 +111,12 @@
 				Bill Gates
 			</p>
 		</div>
-		<div class="outros quadros">
-			<h2>Picture, tooltip e lista ordenada</h2>
-			<h3>Outros varios testes de html aleatorios, 17 set, 2018</h3>
-			<p title="OLHA SÓ, UM TOOLTIP!" >
-				Teste de tooltip.<br>
-				<bdo dir="rtl">Teste de redirecionamento.</bdo>
-			</p>
-			<ol type="I">
-				<li >Abreviando-><abbr class="abreviar" title="Exemplo">Ex</abbr> </li><br>
-				<li >Exemplo </li><br>
-				<li >Exemplo de botao</li><br>
-			</ol>
-			<button>
-				Olha que botão maneiro feito de HTML!
-			</button>
-			<br>
-			<br>
-			<br>
-			
-			
-		</div>
 		<div class="quadros">
 			<h1 style="text-align: center">Quadro de animações!</h1>
 			Passe o mouse por cima!
 			<div class="transicao" style="margin: 15px;"></div>
 			<div class="divanimacao" style="margin:15px;"></div>
 				<div class="animacao"></div>
-			
 		</div>
 
 	<hr>
@@ -249,20 +195,19 @@
 	<div class="quadros ">
 		<h1>Testes e aplicações de Input</h1>
 	<form action="iglu.jpg" method="post" target="_blank" autocomplete="on">
-		
 		<fieldset>
 			<legend> Informações aleatorias que ainda não serão usadas</legend>
   			Seu nome:<br>
-  			<input type="text" name="nome" value="Teste"><br>
+  			<input type="text" name="nome" ><br>
   			Setor:<br>
-			<input type="text" name="setor" value="OutroTeste">  
+			<input type="text" name="setor">  
 			<br><br>
 			<legend>Escolha seu time aleatoriamente pra nada</legend>
 			<select name="times">
 				<option value="Santos">Santos</option>
 				<option value="Palmeiras">Palmeiras</option>
 				<option value="SaoPaulo">São Paulo</option>
-				<option value="Corinthian">Corinthians</option>
+				<option value="Corinthians">Corinthians</option>
 			</select>
 			<br><br>
 			<legend>Se quiser mandar textao vai la, mas é pra nada:</legend>
@@ -275,11 +220,59 @@
 			<input type="email" name="email" required placeholder="Insira seu email aqui"><br>
 			Search Google:<br>
 			 <input type="search" name="googlesearch">
-			 <input type="submit" name="pesquisar" value="Pesquisar" style="width:100%">
-			<input type="submit" value="Salvar">
+			 <input type="button" id="#botaoBuscar" name="pesquisar" value="Pesquisar" style="width:100%">
+			<input type="button" id="#botaoAdicionar" value="Salvar">
 			<input type="reset" value="Cancelar">
+			<input type="button" id="#botaoAlterar" value="Alterar">
 		</fieldset>
 	</form>
+	</div>
+	<div class="quadros ">
+		<div class="btnTabela">
+		<p><a>Exibir tabela</a></p>
+			 <table class="tabela">
+				<tr class="linhaTabela">
+				  <th>Nome:</th>
+				  <th>Setor</th>
+				  <th>Time</th>
+				  <th>Textao</th>
+				  <th>Data</th>
+				  <th>E-mail</th>
+				</tr>
+				<tr class="linhaTabela">
+				  <td>Fernando</td>
+				  <td>Desenvolvimento</td>
+				  <td>Santos</td>
+				  <td>Quero texto nao</td>
+				  <td>17/05/2018</td>
+				  <td>fernando.lima@acupula.com.br</td>
+				</tr>
+				<tr class="linhaTabela">
+				  <td>Bruno</td>
+				  <td>Arlindo</td>
+				  <td>Atendimento</td>
+				  <td>Quero texto nao</td>
+				  <td>17/05/2018</td>
+				  <td>fernando.lima@acupula.com.br</td>
+				</tr>
+				<tr class="linhaTabela">
+				  <td>José</td>
+				  <td>Josias</td>
+				  <td>Web Performance</td>
+				  <td>Quero texto nao</td>
+				  <td>17/05/2018</td>
+				  <td>fernando.lima@acupula.com.br</td>
+				</tr>
+				<tr class="linhaTabela">
+					  <td>Wellington</td>
+					  <td>Adão</td>
+					  <td>Design</td>
+					  <td>Quero texto nao</td>
+					  <td>17/05/2018</td>
+					  <td>fernando.lima@acupula.com.br</td>
+				</tr>
+			  </table>
+		</div>
 	</div>
 	<div class="quadros">
 		<h2>Onde estamos localizados:</h2>

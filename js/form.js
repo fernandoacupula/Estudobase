@@ -1,0 +1,1 @@
+var btnAdicionar = document.querySelector("");
