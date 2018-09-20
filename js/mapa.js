@@ -1,9 +1,3 @@
-function funcaoiframe() {
-    document.getElementById("siteacoplado").style.width = "1250px";
-    document.getElementById("siteacoplado").style.height = "500px";
-    document.getElementById("siteacoplado").style.border = "none";
-}		
-
 function mapa() {
     var opcaomapa = {
         center: new google.maps.LatLng(-23.1175, -46.5567),
@@ -47,12 +41,4 @@ function showPosition(position) {
              var data = ev.dataTransfer.getData("text");
              ev.target.appendChild(document.getElementById(data));
              
-    }  
-      
-    function calculadora(x,y) {
-        var x = document.getElementById("Calc1");
-        var y = document.getElementById("Calc2");
-        //var z = document.getElementById("operacao");
-        document.getElementById("resultado").innerHTML = x+y;
-
-         }
+    } 

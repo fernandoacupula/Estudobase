@@ -13,9 +13,11 @@
 		<title>HTML Base</title>
 		<base href="C:/Users/fernando.lima/Desktop/testegit/estudobase/">
 		<link rel="stylesheet" type="text/css" href="css/style.css"> 
-		<script src="js/script.js"></script>
+		<script src="js/mapa.js"></script>
+		
    </head>
    <body>
+	   <header>
 		<div class="tituloscabecario" id="home">
 				<h1 class="titulo centralizados">
 					Estudo Base
@@ -24,9 +26,7 @@
 				<h2 class="titulo centralizados">
 					Estágio
 				</h2>
-				<h3 class="fundo">
-					Acúpula
-				</h3>
+				<p id="cabecariodata"></p><h3 class="fundo">Acúpula</h3>
 		</div>
 		<ul class="navigationbar">
 				<li class="navigationbar"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#home">Home</a></li>
@@ -41,9 +41,10 @@
 				<li class="navigationbar"><a href="file:///C:/Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#empresa">Saiba mais</a></li>
 				<li class="navigationbar"><a href="file:///C:Users/fernando.lima/Desktop/testegit/estudobase/testepracss.html#aboutme">Sobre mim</a></li>
 		</ul>
+	</header>
 	<!-- Comentario de codigo é sempre bem vindo para facilitar a manutenção do mesmo -->
-
-        <div class="introducao quadros clearfix">
+		<main>
+			<div class="introducao quadros clearfix">
 			<img src="imgs/acupula.jpg" class="logoacupula estilopradireita" alt="logo">
 			<h2><strong>Este documento html será a base do estudo de estagio na Acúpula</strong></h2>
 			<p>
@@ -325,16 +326,59 @@
 				<fieldset>
 					<legend>Insira dois números e escolha a operação:</legend>
 					<input type="text" id="txtCalc1" required placeholder="Digite seu número:">
-					<select id="operacao">
-							<option value=+>Somar ("+")</option>
-							<option value=->Subtrair ("-")</option>
-							<option value=*>Multiplicar ("x")</option>
-							<option value="/">Dividir ("/")</option>	
-					</select>
+					<input type="text" id="operacao" required placeholder="Digite operação">
 					<input type="text" id="txtCalc2" required placeholder="Digite seu número:">
 					<input type="text" id="resultado" readonly placeholder="Resultado" style="width: 100%;cursor: not-allowed;">
-					<input type="button" id="btnCalcular" onclick="calculadora(document.getElementById(txtCalc1), document.getElementById(txtCalc2))"> 
+					<input type="button" value="Calcular" id="btnCalcular"> 
 		</form>
 	</div>
+	<div class="quadros">
+		<form class="o-form">
+			<div class="o-navbar--gary">Buscando CEP com requisição JAX</div>
+			<div class="o-form__body o-form__body--padding">
+				<div class="l-row">
+					<div class="u-grid--2">
+						<label for="" class="o-form__text">CEP</label>
+						<div class="o-form__group">
+							<input class="o-form__data"  name="cep" type="text">
+							<span class="o-form__groupElement"><button id="buscar-cep" class="o-button--gary"><i class="icon-globe"></i></button></span>
+						</div>
+					</div>
+					<div class="u-grid--8">
+						<label for="" class="o-form__text">Endereço</label>
+						<input class="o-form__data" name="endereco" type="text">
+					</div>
+					<div class="u-grid--2">
+						<label for="" class="o-form__text">Numero</label>
+						<input class="o-form__data" name="numero" type="text">
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="u-grid--8">
+						<label for="" class="o-form__text">Bairro</label>
+						<input class="o-form__data" name="bairro" type="text">
+					</div>
+					<div class="u-grid--4">
+						<label for="" class="o-form__text">Complemento</label>
+						<input class="o-form__data" name="complemento" type="text">
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="u-grid--10">
+						<label for="" class="o-form__text">Cidade</label>
+						<input class="o-form__data" name="cidade" type="text">
+					</div>
+					<div class="u-grid--2">
+						<label for="" class="o-form__text">Estado</label>
+						<input class="o-form__data" name="estado" type="text">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</main>
+<script src="js/iframe.js"></script>
+<script src="js/calculadora.js"></script>
+<script src="js/ReqCEP.js"></script>
    </body>
 </html>
